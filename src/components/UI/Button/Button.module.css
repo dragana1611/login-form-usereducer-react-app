@@ -1,0 +1,30 @@
+.button {
+  font: inherit;
+  border: 1px solid #13383a;
+  background: radial-gradient(circle farthest-corner at center center, #e3f6f7, #13383a) no-repeat;
+  color: black;
+  padding: 0.75rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.15rem;
+  border-radius: 30px;
+}
+
+.button:hover,
+.button:active {
+  background: radial-gradient(circle farthest-corner at center center, #e3f6f7, #041e20);
+  border-color: #041e20;
+}
+
+.button:focus {
+  outline: none;
+}
+
+button:disabled,
+button:focus:disabled,
+button:hover:disabled,
+button:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}
